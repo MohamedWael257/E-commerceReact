@@ -1,0 +1,45 @@
+.cont {
+    width: 70%;
+    margin: auto;
+    margin-top: 40px;
+    min-height: 80vh;
+}
+
+.pointerrow {
+    cursor: pointer;
+}
+
+.table,
+td,
+th {
+    border: 2px solid black;
+}
+
+.table {
+    width: 100%;
+}
+
+@media screen and (max-width: 1400px) {
+    .cont {
+        width: 80%;
+        height: 76.5vh;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .cont {
+        width: 90%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .cont {
+        width: 98%;
+        height: auto;
+    }
+
+    td {
+        padding: 5px;
+    }
+}

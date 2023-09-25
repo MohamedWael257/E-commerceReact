@@ -1,0 +1,341 @@
+.categories {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: 200px 1fr;
+    padding: 25px 15px;
+    background-image: url(../../../../assets/background.png);
+}
+
+.categories .list {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 7px;
+    box-shadow: 2px 2px 7px #ddd;
+    border: 1px solid #eee;
+}
+
+.list .allcategories h6,
+.list .trending-search h6 {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: inherit;
+    line-height: 1.2;
+    font-weight: 500;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 12px;
+}
+
+.list .allcategories h6::after,
+.list .trending-search h6::after {
+    content: "";
+    width: 35px;
+    height: 2px;
+    position: absolute;
+    background-color: rgb(33, 37, 41);
+    bottom: -3px;
+    left: 0;
+}
+
+.list .allcategories a,
+.list .trending-search a {
+    list-style: none;
+    color: #3a3a3a;
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 15px;
+    transition: .1s color;
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+    padding-left: 10px;
+    position: relative;
+}
+
+.list .allcategories a::after,
+.list .trending-search a::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: -8px;
+    width: 0px;
+    height: 0%;
+    background-color: rgb(33, 37, 41);
+}
+
+.list .allcategories a:hover,
+.list .trending-search a:hover {
+    color: goldenrod;
+}
+
+/* background-color: #fff; */
+/* .categories .details, */
+.categories .details .offer {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 900px 240px;
+}
+
+/* carousel-control-prev-icon */
+.offer .carousel .carousel-control-prev-icon,
+.offer .carousel .carousel-control-next-icon {
+    background-color: #000;
+}
+
+.add {
+    visibility: hidden;
+    opacity: 0;
+    transition: 3s visibility, .3s opacity, 1s transform;
+    transform: translateY(0px);
+    padding: 25px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.offer .limitedoffer:hover .add,
+.recommended-items .card:hover .add {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(-80px);
+}
+
+
+.add ion-icon {
+    background-color: transparent;
+    width: 35px;
+    height: 35px;
+}
+
+.offer .limitedoffer img {
+    width: 100%;
+}
+
+.categories .details .categories-cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.categories-cards .img-card {
+    border-radius: 50%;
+    overflow: hidden;
+    background-image: url(../../../../assets/manfashion.jpg);
+    height: 240px;
+    background-position: center;
+    background-size: cover;
+    border: 1.5px solid #ffffff;
+    box-shadow: 2px 3px 10px #a8a8a8;
+    position: relative;
+    width: 235px;
+    cursor: pointer;
+    /* width: calc(100% / 5);
+    height: 100%;
+    margin: calc(10% / 5);
+    position: relative;
+    overflow: hidden;
+    background-color: aqua; */
+}
+
+.img-card.c1 {
+    background-image: url(../../../../assets/womanfashion.png);
+}
+
+.img-card.c3 {
+    background-image: url(../../../../assets/laptops.jpg);
+}
+
+.img-card.c4 {
+    background-image: url(../../../../assets/mobilesmart.webp);
+}
+
+.img-card.c5 {
+    background-image: url(../../../../assets/food.jpg);
+}
+
+.imgg {
+    height: 400px !important;
+}
+
+/* .categories .details .categories-cards .img-card img {
+    width: 100%;
+    border: 5px solid rgb(33, 37, 41);
+    border-radius: 50%;
+} */
+.categories-cards .img-card p {
+    color: white;
+    background-color: rgb(33, 37, 41);
+    width: 220px;
+    height: 35px;
+    position: absolute;
+    bottom: 1%;
+    right: 10px;
+    display: grid;
+    place-content: center;
+}
+
+.categories-cards .img-card:hover p {
+    color: goldenrod;
+}
+
+/* //////end categories////////// */
+@media(max-width:1200px) {
+    .categories {
+        gap: 15px;
+        grid-template-columns: 150px 1fr;
+        padding: 15px 5px;
+    }
+
+    .categories .list {
+        padding: 10px;
+    }
+
+    .list .allcategories h6,
+    .list .trending-search h6 {
+        font-size: 13px;
+    }
+
+    .categories .details .offer {
+
+        grid-template-columns: 530px 240px;
+    }
+
+    .categories .details .categories-cards {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .categories-cards .img-card {
+        height: 150px;
+        width: 150px;
+    }
+
+    .imgg {
+        height: 400px !important;
+    }
+
+    .categories-cards .img-card p {
+        width: 150px;
+        right: 0px;
+    }
+}
+
+@media(max-width:992px) {
+    .categories {
+        gap: 15px;
+        grid-template-columns: 150px 1fr;
+        padding: 15px 5px;
+    }
+
+    .categories .list {
+        padding: 10px;
+    }
+
+    .list .allcategories h6,
+    .list .trending-search h6 {
+        font-size: 13px;
+    }
+
+    .categories .details .offer {
+
+        grid-template-columns: 300px 240px;
+    }
+
+    .categories .details .categories-cards {
+        display: flex;
+        justify-content: space-between;
+        height: 120px;
+    }
+
+    .categories-cards .img-card {
+        height: 100%;
+        width: 20%;
+    }
+
+    .imgg {
+        height: 400px !important;
+    }
+
+    .categories-cards .img-card p {
+        width: 100%;
+        right: 0px;
+        font-size: .8rem;
+    }
+}
+
+@media(max-width:768px) {
+    .categories {
+        gap: 15px;
+        grid-template-columns: 1fr;
+        padding: 15px 5px;
+    }
+
+    .categories .list {
+        padding: 10px 25px;
+    }
+
+    .list .allcategories h6,
+    .list .trending-search h6 {
+        font-size: 10px;
+    }
+
+    .list .allcategories a,
+    .list .trending-search a {
+        font-size: 15px;
+        display: inline-block;
+    }
+
+    .categories .details .offer {
+
+        grid-template-columns: 300px 240px;
+    }
+
+    .list .allcategories a::after,
+    .list .trending-search a::after {
+        width: 2px;
+        height: 100%;
+    }
+
+    .list .allcategories :nth-child(6):after,
+    .list .trending-search :nth-child(14)::after {
+        width: 0;
+        height: 0;
+    }
+
+}
+
+@media(max-width:576px) {
+    .categories {
+        gap: 15px;
+        grid-template-columns: 1fr;
+        padding: 15px 5px;
+    }
+
+    .categories .list {
+        padding: 10px 25px;
+        width: 100%;
+    }
+
+    .list .allcategories h6,
+    .list .trending-search h6 {
+        font-size: 10px;
+    }
+
+    .list .allcategories a,
+    .list .trending-search a {
+        font-size: 15px;
+        display: inline-block;
+    }
+
+    .categories .details .offer {
+        grid-template-columns: 1fr;
+    }
+
+    .categories .details .categories-cards {
+        display: flex;
+        justify-content: space-between;
+        display: none;
+    }
+
+    .limitedoffer {
+        display: none;
+    }
+}

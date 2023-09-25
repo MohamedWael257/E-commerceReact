@@ -1,0 +1,147 @@
+.filter {
+    background-image: url(../../assets/background.png);
+    display: grid;
+    padding: 20px;
+    grid-template-columns: 1fr 30%;
+}
+
+.filter>* {
+    font-size: 1.5rem !important;
+}
+
+.select select {
+    background-color: transparent;
+    border: 3px solid black;
+    width: 100%;
+    height: 50px;
+    font-size: 1.5rem;
+
+}
+
+.searchinput {
+    padding: 5px 10px;
+    margin: 5px 0;
+    border: 2px solid black;
+    font-size: 2rem;
+    border-radius: 25px;
+    text-align: center;
+    width: 100%;
+}
+
+.aproducts {
+    background-image: url(../../assets/background.png);
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    padding: 15px;
+}
+
+.product-card {
+    background-color: white;
+    padding: 10px;
+    border: 2px solid grey;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.product-card .card-img {
+    height: 200px;
+
+}
+
+.product-card .card-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.product-card span {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+.product-card .addtocart {
+    position: absolute;
+    right: -60px;
+    top: 32px;
+    display: flex;
+    flex-direction: column;
+    transition: .8s right;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.addtocart button {
+    margin-bottom: 15px;
+    background-color: black;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    font-size: 1.6rem;
+    border: none;
+    transition: .5s color;
+
+}
+
+.product-card::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .8s background;
+}
+
+.product-card:hover .addtocart {
+    right: 10px;
+}
+
+.addtocart button:hover {
+    color: goldenrod;
+}
+
+.product-card:hover.product-card::after {
+    background-color: rgb(0, 0, 0, 0.3);
+}
+
+@media (max-width: 1200px) {
+    .aproducts {
+        grid-template-columns: repeat(3, 34%);
+    }
+
+    .searchinput {
+        width: 300px;
+        transform: translate(-9%, 0%);
+    }
+}
+
+@media (max-width: 992px) {
+    .searchinput {
+        transform: translate(-25%, 0%);
+    }
+}
+
+@media(max-width:768px) {
+    .aproducts {
+        grid-template-columns: repeat(2, 50%);
+    }
+
+    .searchinput {
+        transform: translate(-45%, 0%);
+    }
+}
+
+@media(max-width:576px) {
+    .aproducts {
+        grid-template-columns: repeat(1, 100%);
+    }
+
+    .searchinput {
+        transform: translate(-68%, 0%);
+    }
+}

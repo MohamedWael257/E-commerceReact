@@ -1,0 +1,50 @@
+.cont {
+    width: 70%;
+    margin: auto;
+    margin-top: 40px;
+    min-height: 80vh;
+}
+
+.tdimg {
+    width: 100px;
+    height: 100px;
+    border-radius: 25px;
+}
+
+
+
+@media screen and (max-width: 1400px) {
+    .cont {
+        width: 80%;
+        height: 76.5vh;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .cont {
+        width: 90%;
+        height: auto;
+    }
+
+    .image {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .cont {
+        width: 98%;
+        height: auto;
+    }
+
+    td {
+        padding: 5px;
+    }
+
+    .table thead tr :nth-child(3),
+    .table tbody tr :nth-child(3),
+    .table thead tr :nth-child(5),
+    .table tbody tr :nth-child(5) {
+        display: none;
+    }
+}

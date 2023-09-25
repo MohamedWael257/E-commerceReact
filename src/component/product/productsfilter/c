@@ -1,0 +1,76 @@
+import React, { useEffect, useState } from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import "../Product.css"
+import axios from 'axios'
+import Productsitem from '../productsitem/Productsitem'
+import { useDispatch } from 'react-redux'
+
+function Productsfilter() {
+    // const filterUI = useSelector(filterproduct)
+    const [products, setProducts] = useState([])
+    const [afterfilter, setAfterfilter] = useState([])
+    const dispatch = useDispatch()
+
+    useEffect(() => {
+        axios.get("/db/products.json")
+            .then(res => {
+                setProducts(res.data.products)
+                // setAfterfilter(products)
+            })
+            .catch(err => console.log(err))
+    }, [])
+    const category = [
+        "all",
+        ...new Set(products.map((product) => product.category)),
+    ];
+    const filterbycategory = (e) => {
+        let categorey = e.target.value
+        let arr = []
+        if (categorey !== 'all') {
+            products.map((ele) => {
+                if (ele.category === categorey) {
+                    arr.push(ele)
+                    setAfterfilter(arr)
+                }
+            })
+        }
+        else {
+            setAfterfilter(products)
+        }
+    }
+    // const filterbycategory = (e) => {
+    //     const cat = e.target.value
+    //     dispatch(filterByCategory({ products, category: cat }));
+    // }
+    return (
+
+        <>
+            <div className="filter">
+                <h6>All Products</h6>
+                <div className=" select">
+                    <label className="me-2 click">Categories</label>
+                    <select aria-label="Default select example" className='text-dark form-select' onChange={filterbycategory}>
+                        {category.map((cat, index) => {
+                            return (
+                                <>
+                                    <option key={index} value={cat}>{cat}</option>
+                                </>
+                            )
+                        })}
+                    </select>
+                </div>
+            </div>
+            <section className="aproducts">
+                {afterfilter.length === 0 ?
+                    <Productsitem pro={products} /> : <Productsitem pro={afterfilter} />
+                }
+                {/* {filterUI.length === 0 ?
+                    <Productsitem pro={products} /> : <Productsitem pro={filterUI} />
+                } */}
+            </section>
+
+        </>
+    )
+}
+
+export default Productsfilter

@@ -1,0 +1,505 @@
+.categories {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: 200px 1fr;
+    padding: 25px 15px;
+    background-image: url(../../../assets/background.png);
+}
+
+.categories .list {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 7px;
+    box-shadow: 2px 2px 7px #ddd;
+    border: 1px solid #eee;
+}
+
+.list .allcategories h6,
+.list .trending-search h6 {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: inherit;
+    line-height: 1.2;
+    font-weight: 500;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 12px;
+}
+
+.list .allcategories h6::after,
+.list .trending-search h6::after {
+    content: "";
+    width: 35px;
+    height: 2px;
+    position: absolute;
+    background-color: rgb(33, 37, 41);
+    bottom: -3px;
+    left: 0;
+}
+
+.list .allcategories a,
+.list .trending-search a {
+    list-style: none;
+    color: #3a3a3a;
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 15px;
+    transition: .1s color;
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+    padding-left: 10px;
+}
+
+.list .allcategories a:hover,
+.list .trending-search a:hover {
+    color: goldenrod;
+}
+
+/* background-color: #fff; */
+/* .categories .details, */
+.categories .details .offer {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 900px 240px;
+}
+
+/* carousel-control-prev-icon */
+.offer .carousel .carousel-control-prev-icon,
+.offer .carousel .carousel-control-next-icon {
+    background-color: #000;
+}
+
+.add {
+    visibility: hidden;
+    opacity: 0;
+    transition: 3s visibility, .3s opacity, 1s transform;
+    transform: translateY(0px);
+    padding: 25px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.offer .limitedoffer:hover .add,
+.recommended-items .card:hover .add {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(-80px);
+}
+
+
+.add ion-icon {
+    background-color: transparent;
+    width: 35px;
+    height: 35px;
+}
+
+.offer .limitedoffer img {
+    width: 100%;
+}
+
+.categories .details .categories-cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.categories-cards .img-card {
+    border-radius: 50%;
+    overflow: hidden;
+    background-image: url(../../../assets/manfashion.jpg);
+    height: 240px;
+    background-position: center;
+    background-size: cover;
+    border: 1.5px solid #ffffff;
+    box-shadow: 2px 3px 10px #a8a8a8;
+    position: relative;
+    width: 235px;
+    cursor: pointer;
+    /* width: calc(100% / 5);
+    height: 100%;
+    margin: calc(10% / 5);
+    position: relative;
+    overflow: hidden;
+    background-color: aqua; */
+}
+
+.img-card.c1 {
+    background-image: url(../../../assets/womanfashion.png);
+}
+
+.img-card.c3 {
+    background-image: url(../../../assets/laptops.jpg);
+}
+
+.img-card.c4 {
+    background-image: url(../../../assets/mobilesmart.webp);
+}
+
+.img-card.c5 {
+    background-image: url(../../../assets/food.jpg);
+}
+
+.imgg {
+    height: 400px !important;
+}
+
+/* .categories .details .categories-cards .img-card img {
+    width: 100%;
+    border: 5px solid rgb(33, 37, 41);
+    border-radius: 50%;
+} */
+.categories-cards .img-card p {
+    color: white;
+    background-color: rgb(33, 37, 41);
+    width: 220px;
+    height: 35px;
+    position: absolute;
+    bottom: 1%;
+    right: 10px;
+    display: grid;
+    place-content: center;
+}
+
+.categories-cards .img-card:hover p {
+    color: goldenrod;
+}
+
+/* //////end categories////////// */
+
+.hot-deal,
+.fashionn {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: 250px 1fr;
+    padding: 25px 15px;
+    background-image: url(../../../assets/background.png);
+}
+
+.hot-deal .special-items {
+    background-color: #fff;
+}
+
+.special-items .item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 10px;
+    position: relative;
+}
+
+.special-items .item ::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: rgb(33, 37, 41);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.special-items .item img {
+    width: 70px;
+    height: 70px;
+}
+
+
+
+.hot-deal .deals .line,
+.fashionn .typesofcategories .line,
+.hot-deal .typesofcategories .line,
+.feature-items .line {
+    background-color: rgb(33, 37, 41);
+    width: 100%;
+    height: 2px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.hot-deal .deals .line::after,
+.fashionn .typesofcategories .line::after,
+.digital .typesofcategories .line::after,
+.feature-items .line::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 86px;
+    width: 0;
+    height: 0;
+    border-width: 10px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+
+.deals .carousel .cards {
+    display: flex;
+    justify-content: space-evenly;
+    height: 270px;
+    /* display: grid; */
+    /* gap: 10px; */
+    /* grid-template-columns: 250px, 250px, 250px, 250px; */
+    /* width: 100%; */
+}
+
+.deals .carousel .cards .card {
+    width: 250px;
+    background-color: rgb(54, 59, 65);
+    color: white;
+}
+
+.deals .carousel .cards .card img {
+    width: 100%;
+    height: 140px;
+    transition: .7s filter;
+}
+
+.deals .carousel .cards .card:hover .add {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(-53px);
+}
+
+.deals .carousel .cards .card:hover>img {
+    filter: contrast(.5);
+}
+
+/* //////////end hot deal//////////// */
+.fashionn .offers {
+    background-color: #fff;
+}
+
+.offers .shop-now {
+    height: 300px;
+    /* margin-bottom: 20px; */
+}
+
+.shop-now img {
+    height: 100%;
+}
+
+.shop-now button {
+    transform: translate(50px, -230px);
+    width: 150px;
+    height: 50px;
+}
+
+.fashionn .offers .recommended-items .recommended {
+    width: 100%;
+    height: 50px;
+}
+
+.fashionn .offers .recommended-items .card {
+    height: 320px;
+    border: none;
+}
+
+.fashionn .offers .recommended-items .card img {
+    width: 100%;
+    transition: .7s opacity;
+}
+
+.fashionn .recommended-items .card:hover img {
+    opacity: 0.5;
+}
+
+.fashionn .typesofcategories .fashion-accessories,
+.fashionn .typesofcategories .digital-electromic {
+
+    background-color: #fff;
+    border: 1px solid rgb(85, 84, 84);
+}
+
+.fashionn .typesofcategories .fashion-accessories .fparent,
+.fashionn .typesofcategories .digital-electromic .fparent {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+}
+
+.fashionn .typesofcategories .fashion-accessories .fparent>.child,
+.fashionn .typesofcategories .digital-electromic .fparent>.child {
+    height: 300px;
+}
+
+.fashionn .typesofcategories .fashion-accessories .fparent>.child .details,
+.fashionn .typesofcategories .digital-electromic .fparent>.child .details {
+    padding: 35px;
+    display: grid;
+    grid-template-rows: 20px 20px 20px 20px;
+    gap: 20px;
+}
+
+.fashionn .typesofcategories .fashion-accessories .fparent .sparent .child,
+.fashionn .typesofcategories .digital-electromic .fparent .sparent .child {
+    border: 1px solid rgb(85, 84, 84);
+    position: relative;
+    cursor: pointer;
+}
+
+.fashionn .typesofcategories .fashion-accessories .fparent .sparent p,
+.fashionn .typesofcategories .digital-electromic .fparent .sparent p {
+
+    position: absolute;
+    top: 80px;
+    left: 12px;
+    text-align: center;
+}
+
+.fashionn .typesofcategories .fashion-accessories .fparent>.child img,
+.fashionn .typesofcategories .digital-electromic .fparent>.child img {
+
+    width: 100%;
+    height: 100%;
+}
+
+.fashionn .typesofcategories .fashion-accessories .fparent .sparent .lparent,
+.fashionn .typesofcategories .digital-electromic .fparent .sparent .lparent {
+    height: 150px;
+    display: grid;
+    grid-template-columns: 125px 125px;
+}
+
+.fashionn .typesofcategories .fashion-accessories .fparent .sparent img,
+.fashionn .typesofcategories .digital-electromic .fparent .sparent img {
+    width: 50%;
+    height: 50%;
+    transform: translatex(30px);
+    /* border: 1px solid rgb(85, 84, 84); */
+
+}
+
+/* //////////end FASHION & ACCESSORIES//////// */
+/* //////////end digital & electromic//////// */
+.feature-items {
+    background-image: url(../../../assets/background.png);
+    padding: 10px 30px;
+}
+
+.feature-items .content {
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.feature-items .content .cardition {
+    /* width: 100%; */
+    width: 250px;
+    height: 360px;
+    border: 1px solid rgb(208, 206, 206);
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.feature-items .content .cardition .card-img img {
+    width: 100%;
+    height: 260px;
+    transition: .5s opacity;
+}
+
+.feature-items .content .cardition .card-details {
+    text-align: center;
+}
+
+.feature-items .content .cardition .card-details .star {
+    transform: translateY(-10px);
+}
+
+.feature-items .content .cardition:hover .add {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(-90px);
+}
+
+.feature-items .content .cardition:hover img {
+    opacity: 0.5;
+}
+
+/* end feauter-items */
+.coupon {
+    padding: 20px;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.coupon .contact input {
+    width: 250px;
+    padding: 5px;
+}
+
+.coupon .contact label {
+    width: 40px;
+    height: 38px;
+    border: 2px solid #ffc107;
+    transform: translate(-5px, -6px);
+}
+
+.coupon .contact label>i {
+    transform: translate(8px, 5px);
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+
+.coupon .icons .fa-facebook:hover,
+.coupon .icons .fa-twitter:hover,
+.coupon .icons .fa-linkedin:hover {
+    color: #0d6efd;
+    font-size: 1.4em;
+}
+
+.coupon .icons .fa-google-plus:hover,
+.coupon .icons .fa-instagram:hover,
+.coupon .icons .fa-pinterest:hover {
+    color: #dc3545;
+    font-size: 1.4em;
+}
+
+.coupon .icons .fa-globe:hover {
+    color: #ffc107;
+    font-size: 1.4em;
+}
+
+.secure {
+    padding: 10px 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.secure .card,
+.value .card {
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    transition: .5s color, .5s background;
+}
+
+.secure .card div,
+.value .card div {
+    margin-bottom: 10px;
+}
+
+.secure .card div i,
+.value .card div i {
+    font-size: 45px;
+}
+
+.secure .card div.grey,
+.value .card div.grey {
+    color: grey;
+}
+
+.value .card {
+    margin: 0 auto;
+}
+
+.secure .card:hover,
+.value .card:hover {
+    background-color: #ffc107;
+    color: white;
+}
+
+/* end coupon */

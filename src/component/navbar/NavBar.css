@@ -1,0 +1,270 @@
+header {
+    background-color: rgb(33, 37, 41);
+    color: white;
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 0;
+    display: grid;
+    grid-template-columns: 18% 1fr;
+    position: relative;
+}
+
+header>div {
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.logo {
+    /* background-color: aqua; */
+    position: relative;
+    color: white;
+    transform: translate(-15px, -18px);
+    font-size: 3rem;
+    transition: .5s color, .5s background;
+}
+
+.logo::after {
+    content: "eg";
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    top: 25px;
+    right: -8px;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    text-transform: lowercase;
+}
+
+.location>p {
+    font-size: 1rem;
+}
+
+.location:hover {
+    color: goldenrod;
+}
+
+header nav {
+    display: grid;
+    grid-template-columns: 1fr repeat(5, 9%);
+}
+
+.search {
+    width: 100%;
+}
+
+.search button {
+    background-color: grey;
+    width: 7%;
+    height: 40px;
+    font-size: 1.3rem;
+    border: none;
+}
+
+.search input {
+    width: 83%;
+    height: 40px;
+    font-size: 1.3rem;
+}
+
+.search i {
+    width: 7%;
+    height: 40px;
+    background-color: goldenrod;
+    padding: 11px;
+}
+
+header nav>:nth-child(2),
+header nav>:nth-child(3),
+header nav>:nth-child(4),
+header nav>:nth-child(5),
+header nav>:nth-child(6),
+header nav>:nth-child(7),
+/* header nav>:nth-child(8), */
+.home>a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: .5s color;
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+}
+
+header nav>:nth-child(2):hover,
+header nav>:nth-child(3):hover,
+header nav>:nth-child(4):hover,
+header nav>:nth-child(5):hover,
+header nav>:nth-child(6):hover,
+header nav>:nth-child(7):hover,
+/* header nav>:nth-child(8):hover, */
+.home>a:hover {
+    color: goldenrod;
+}
+
+nav .signout {
+    transform: translateY(-17px);
+}
+
+.home {
+    padding: 5px 10px;
+    background-color: rgb(54, 59, 65);
+}
+
+.home a {
+    margin-right: 10px;
+}
+
+/* header nav {
+    display: grid;
+} */
+
+header>button {
+    position: absolute;
+    top: 25px;
+    right: 0;
+    background-color: rgb(9, 36, 62);
+    border: none;
+    color: white;
+    place-content: center;
+    z-index: 3;
+    display: none;
+}
+
+
+
+@media (max-width: 1200px) {
+    body {
+        /* background-color: yellow; */
+    }
+
+    .search button {
+        height: 40px;
+        transform: translateY(1px);
+    }
+
+    .search input {
+        width: 75%;
+    }
+
+    .search i {
+        position: relative;
+        top: -.5px;
+    }
+
+
+
+    header nav {
+        grid-template-columns: 1fr repeat(5, 12%);
+    }
+}
+
+@media (max-width: 992px) {
+    body {
+        /* background-color: green; */
+    }
+
+    header {
+        grid-template-columns: 25% 1fr;
+
+    }
+
+    header nav {
+        grid-template-columns: 1fr repeat(5, 18%);
+    }
+
+    .search {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@media(max-width:768px) {
+    body {
+        /* background-color: blue; */
+    }
+
+    header {
+        grid-template-columns: 30% 1fr;
+    }
+
+    header nav {
+        grid-template-columns: 1fr repeat(5, 18%);
+    }
+
+    nav>* {
+        font-size: 1rem !important;
+    }
+
+    .logo::after {
+        font-size: 1.2rem;
+        top: 30px;
+    }
+}
+
+@media(max-width:576px) {
+    body {
+        /* background-color: red; */
+    }
+
+    header {
+        grid-template-columns: 50% 1fr;
+
+    }
+
+    header>* {
+        display: none;
+    }
+
+    header>nav {
+        display: none;
+    }
+
+    header nav>* {
+        text-align: center;
+    }
+
+    header>button {
+        display: grid;
+    }
+
+    .shownav {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        z-index: 2;
+        top: 75px;
+        right: 0;
+        background-color: rgb(9, 36, 62);
+        width: 80.5%;
+        padding: 0;
+        transition: 2s display;
+        height: 100vh;
+    }
+
+    .shownav>* {
+        padding: 20px !important;
+        border-bottom: 2px solid white !important;
+        font-size: 2rem !important;
+    }
+
+    .shownav .search {
+        display: none;
+    }
+
+    .showbtn {
+        width: 80.5%;
+    }
+
+    .hidebtn {
+        width: fit-content;
+    }
+
+    .home {
+        width: 100%;
+    }
+
+    .home>* {
+        font-size: 90% !important;
+    }
+}
