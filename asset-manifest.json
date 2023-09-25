@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/E-commerceReact/static/css/main.0c75beb5.css",
+    "main.js": "/E-commerceReact/static/js/main.90bfca73.js",
+    "static/js/787.dcc73137.chunk.js": "/E-commerceReact/static/js/787.dcc73137.chunk.js",
+    "static/media/womanfashion.png": "/E-commerceReact/static/media/womanfashion.7906fc4ecb6d7eb19e55.png",
+    "static/media/food.jpg": "/E-commerceReact/static/media/food.8221f8dbafda7eba77d8.jpg",
+    "static/media/background.png": "/E-commerceReact/static/media/background.69e91562fedeee190838.png",
+    "static/media/mobilesmart.webp": "/E-commerceReact/static/media/mobilesmart.88cff469d9e6c5b981bc.webp",
+    "static/media/manfashion.jpg": "/E-commerceReact/static/media/manfashion.0ae753b6fced3cf074ab.jpg",
+    "static/media/manwatches.jpg": "/E-commerceReact/static/media/manwatches.1179f625f55ae2e02295.jpg",
+    "static/media/3.jpg": "/E-commerceReact/static/media/3.013a211fc75395f88c96.jpg",
+    "static/media/recommended1.png": "/E-commerceReact/static/media/recommended1.6b4d4a5bb5b531158df8.png",
+    "static/media/phone.jpg": "/E-commerceReact/static/media/phone.8ed9b052d045c1a99994.jpg",
+    "static/media/laptops.jpg": "/E-commerceReact/static/media/laptops.d2e6f6272ad9d8280758.jpg",
+    "static/media/1.jpg": "/E-commerceReact/static/media/1.6bc48594dc5f313b932a.jpg",
+    "static/media/motorcycle.jpg": "/E-commerceReact/static/media/motorcycle.f118be8f072c03495cab.jpg",
+    "static/media/bags1.jpg": "/E-commerceReact/static/media/bags1.d08061a44ebe529474e4.jpg",
+    "static/media/womanwatch3.jpg": "/E-commerceReact/static/media/womanwatch3.e0512243f53c6a20aecc.jpg",
+    "static/media/t-shirt.jpg": "/E-commerceReact/static/media/t-shirt.d5fed0f9bb3b52ef1cb0.jpg",
+    "static/media/laptop4.png": "/E-commerceReact/static/media/laptop4.f0fb21ad82de9d6ca2d8.png",
+    "static/media/recommended3.jpg": "/E-commerceReact/static/media/recommended3.b21b57dda0b44b8a4dfb.jpg",
+    "static/media/woman.jpg": "/E-commerceReact/static/media/woman.bc681f6c04232f4b4a4f.jpg",
+    "static/media/automotive.jpg": "/E-commerceReact/static/media/automotive.4420c738a0f6c71d3545.jpg",
+    "static/media/tops.jpg": "/E-commerceReact/static/media/tops.5b430fe908c9bc8356bc.jpg",
+    "static/media/offer.jpg": "/E-commerceReact/static/media/offer.f20e34f11f094af78eb7.jpg",
+    "static/media/jewllery.jpg": "/E-commerceReact/static/media/jewllery.57a4155e6b026bddabc8.jpg",
+    "static/media/manclothes.jpg": "/E-commerceReact/static/media/manclothes.c56bd9de5d35c3136273.jpg",
+    "static/media/4.jpg": "/E-commerceReact/static/media/4.a658814106f766dc9224.jpg",
+    "index.html": "/E-commerceReact/index.html",
+    "main.0c75beb5.css.map": "/E-commerceReact/static/css/main.0c75beb5.css.map",
+    "main.90bfca73.js.map": "/E-commerceReact/static/js/main.90bfca73.js.map",
+    "787.dcc73137.chunk.js.map": "/E-commerceReact/static/js/787.dcc73137.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0c75beb5.css",
+    "static/js/main.90bfca73.js"
+  ]
+}
